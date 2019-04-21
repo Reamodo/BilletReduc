@@ -1,0 +1,952 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+}
+html{
+     font-size: 62.5%;
+}
+a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.backgroundcolor {
+  background: linear-gradient(#060121, #0A6188);
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+/*taille logo account, backet, langue*/
+.top-nav-wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  max-width: 2550px;
+  margin: auto;
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header_nav_main {
+  max-width: 1159px;
+  margin: auto;
+  width: 90%;
+}
+
+.header_nav_main i {
+  color: #FB5655;
+  margin-bottom: .2em;
+  margin-right: .5em;
+  vertical-align: middle;
+}
+
+.header_nav_category {
+  max-width: 1150px;
+  margin: auto;
+  width: 100%;
+}
+
+.header-top-nav-secondary li {
+  margin-left: 3rem;
+}
+
+/*taille du logo*/
+.img-br img {
+  width: 15rem;
+  height: 8rem;
+}
+
+.header_nav_main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family:
+}
+
+.header_nav_main {
+  margin-bottom: 3rem;
+}
+
+/*alignement des éléments du menu principal*/
+.header_nav_category ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 3rem;
+  text-transform: uppercase;
+}
+
+/*BARRE DE RECHERCHE*/
+/*animation de la barre de recherche hover : le hover permet de faire apparaitre le champ*/
+.header_nav_category form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -5%);
+  -ms-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  width: 40px;
+  height: 40px;
+  background: WHITE;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 2em;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.header_nav_category input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 38.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.search_bar i {
+  /*positionnement de l'icon recherche dans l'input*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8.5px;
+  width: 36.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1.2em;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+/*HOVER SEARCHBAR*/
+.search_bar:hover {
+  width: 200px;
+  /*la barre de recherche prend la largeur 200px lors du hover*/
+  cursor: pointer;
+}
+
+.search_bar:hover input {
+  display: block;
+}
+
+.search_bar:hover i {
+  color: #FB5655;
+}
+
+/*FIN BARRE DE RECHERCHE*/
+
+/*PREMIERE LIGNE HORIZONTALE*/
+.header_nav_category::after {
+  /*after du menu par catégorie pour créer une barre horizontale afin de délimiter les sections du site*/
+  content: '';
+  display: block;
+  width: 70em;
+  height: 0.2em;
+  background-color: white;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+/*FIN HEADER*/
+
+/*BREADCRUMB*/
+.breadcrumb {
+  max-width: 1050px;
+  margin: auto;
+  width: 100%;
+}
+
+.breadcrumb a {
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+
+.chevron::before {
+  color: #FB5655;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.45em;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: top;
+  width: 0.45em;
+  margin-top: 0.3rem;
+  margin-right: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+/*postionnement & taille IMG*/
+.image_spectacle img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.info-spectacle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  max-width: 1150px;
+  margin: auto;
+  margin-top: 2em;
+  width: 100%;
+}
+
+/*COLONNE 2*/
+.col2 {
+  width: 35%;
+  margin-bottom: 2em;
+}
+
+.texte-spectacle h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+.category {
+  color: #FB5655;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .5em;
+}
+
+.category i {
+  margin-right: 1em;
+}
+
+.auteur {
+  margin-bottom: 2em;
+}
+
+.auteur li {
+  margin-bottom: 0.5em;
+}
+
+.info_essentiel li {
+  padding-bottom: 1.5em;
+  font-size: 1em;
+}
+
+.info_essentiel i {
+  margin-right: 1em;
+}
+
+/*COLONNE 3 : bannière -34%*/
+.service_billetterie {
+  position: absolute;
+}
+
+.service_billetterie::before {
+  content: '';
+  display: block;
+  width: 19.8rem;
+  height: 0.2em;
+  background-color: white;
+  margin-top: .6rem;
+  position: relative;
+  right: 2rem;
+}
+
+.service_billetterie li {
+  padding-bottom: 1.5em;
+  position: relative;
+  top: 1em;
+  left: .7em;
+}
+
+.price {
+  position: relative;
+  top: 2.7em;
+  left: 3.4em;
+  font-size: 1em;
+  color: #FB5655;
+  letter-spacing: .2em;
+}
+
+.price::after {
+  content: '';
+  display: block;
+  width: 19.8rem;
+  height: 0.2em;
+  background-color: white;
+  margin-top: .6rem;
+  position: relative;
+  right: 5.4rem;
+}
+
+.btn-reservez {
+  position: relative;
+  top: 3em;
+  left: 3.5em;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  background-color: #FB5655;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.btn-reservez:hover {
+  background-color: #0A6188;
+  border-color: white;
+}
+
+.service_billetterie i {
+  margin-right: 1.5em;
+}
+
+.service_billetterie p:nth-child(3) {
+  color: #FB5655;
+  font-size: 1.3em;
+}
+
+.service_billetterie {
+  width: 22vw;
+  background-color: #051827;
+  /*crea block + couleur de fond*/
+  color: white;
+  padding: 2rem;
+  height: 320px;
+  position: relative;
+}
+
+.lower-percentage {
+  display: inline-block;
+  background-color: #FB5655;
+  text-decoration: none;
+  color: white;
+  width: 60px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 5rem;
+  right: -1rem;
+}
+
+.lower-percentage::after {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+}
+
+.lower-percentage::after {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  right: -.5rem;
+  bottom: calc(100% + .5rem);
+  border-right: 1rem solid #821513;
+  border-top: 1rem solid transparent;
+  -webkit-transform: rotateZ(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotateZ(90deg);
+}
+
+/*FIN col3 : bannière - 34%*/
+
+/*section 2*/
+/*bouton description & critiques*/
+.bouton-description-critiques {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: auto;
+  width: 45%;
+}
+
+.btn {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 40px;
+  background: #FB5655;
+  font-family: 'al nile';
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #ccc;
+  text-shadow: 0 -1px #eee;
+}
+
+.btn:active {
+  background: #2cabcf;
+  text-shadow: 0 -1px #eee;
+  border: 1px solid #1f6b81;
+}
+
+/*Description du spectacle*/
+.text-description h2 {
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.text-description p {
+  max-width: 1150px;
+  margin: auto;
+  width: 75%;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  color: white;
+  line-height: 2;
+}
+
+.description_link {
+  max-width: 1150px;
+  margin: auto;
+  width: 75%;
+  font-size: 1rem;
+  color: white;
+}
+
+.description_link i {
+  margin-right: .5rem;
+}
+
+.description_link li {
+  margin-bottom: .5em;
+}
+
+/*Background image section 2*/
+.description_spectacle {
+  background: url("../img-gus/background-img-opacity.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+/*FIN SECTION 2*/
+
+/*SECTION 3*/
+/*checkout*/
+.breadcrumb_checkout ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb_checkout::after {
+  /*DEUXIEME LIGNE*/
+  content: '';
+  display: block;
+  width: 70em;
+  height: 0.1em;
+  margin-top: 2em;
+  background-color: #0A6188;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.red a {
+  color: #FB5655;
+}
+
+.grey a {
+  color: #707070;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.reddot {
+  height: 25px;
+  width: 25px;
+  background-color: #FB5655;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .5em;
+}
+
+/*RECAPITULATIF*/
+.recap {
+  color: #FB5655;
+  max-width: 1550px;
+  margin: auto;
+  width: 78%;
+  margin-bottom: 2em;
+}
+
+.recap i {
+  margin-right: 1rem;
+}
+
+/*CALENDRIER*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.calendar {
+  border: 2px solid black;
+}
+
+.month {
+  padding: 20px 70px;
+  width: 78%;
+  background: #CCCCCC;
+  text-align: center;
+  margin: auto;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: #0A6188;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: auto;
+  width: 78%;
+  padding: 10px 0;
+  background-color: #CCCCCC;
+}
+
+.weekdays li {
+  color: white;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+}
+
+.weekdays li .underline {
+  color: #FB5655;
+  border-bottom: 3px solid #FB5655;
+}
+
+.days {
+  padding: 10px 0px;
+  background: #CCCCCC;
+  margin: auto;
+  width: 78%;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #0A6188;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #0A6188;
+  color: white !important
+}
+
+.days li .active:hover {
+  background-color: #FB5655;
+  cursor: pointer;
+}
+
+.days li .check {
+  padding: 5px;
+  background: #FB5655;
+  cursor: pointer;
+  color: white !important
+}
+
+/*FIN CALENDRIER*/
+/*FIN SECTION 3*/
+
+/*FOOTER*/
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#060121), to(#0A6188));
+  background: -webkit-linear-gradient(#060121, #0A6188);
+  background: -o-linear-gradient(#060121, #0A6188);
+  background: linear-gradient(#060121, #0A6188);
+  margin-top: 3em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*FORCE DE VENTE*/
+.selling-power ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.selling-power li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 1150px;
+  margin: auto;
+  width: 90%;
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.selling-power img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.5em;
+}
+
+.selling-power i {
+  margin-bottom: .4em;
+}
+
+/*newsletter*/
+.newsletter {
+  background-color: #FB5655;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#emailNl {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#newsletter {
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  max-width: 1150px;
+  margin: auto;
+  width: 65%;
+}
+
+.newsletter input[type=email] {
+  width: 35%;
+  background-color: #FB5655;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 15px 20px 15Px 40px;
+  background-size: 10%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.newsletter input[type=button] {
+  background-color: white;
+  border: none;
+  border-radius: 5em;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  color: #FB5655;
+  cursor: pointer;
+}
+
+form i {
+  position: relative;
+  right: 20.5em;
+  top: .2em;
+}
+
+/*main footer*/
+/*top footer : logo & quote*/
+.mainFooter img {
+  width: 8em;
+  height: 5em;
+}
+
+.logoEtQuoteBilletReduc {
+  vertical-align: middle;
+}
+
+.logoEtQuoteBilletReduc ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1150px;
+  margin: auto;
+  width: 50%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.logoEtQuoteBilletReduc p {
+  font-size: 1.1em;
+}
+
+.logo p {
+  padding-top: 1.5em;
+}
+
+.logoEtQuoteBilletReduc::after {
+  content: '';
+  display: block;
+  width: 70em;
+  height: 0.2em;
+  margin-top: 2em;
+  background-color: white;
+  margin: auto;
+}
+
+/*middle section footer*/
+.info-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+  width: 72%;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.info-footer h3 {
+  text-transform: uppercase;
+  padding: .5em;
+}
+
+.reseaux {
+  text-align: center;
+}
+
+.reseaux img {
+  width: 8em;
+  height: 2.5em;
+  margin-right: 1em;
+}
+
+.reseaux ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+.reseauxsoc {
+  width: 15vw;
+  margin: auto;
+}
+
+.app h4 {
+  padding-bottom: 1.7em;
+}
+
+/*COLONNE 1*/
+.BR li {
+  padding-bottom: 1.5em;
+  ;
+}
+
+.BR h3 {
+  margin-bottom: 1em;
+}
+
+.BR h3::after {
+  content: '';
+  display: block;
+  width: 6em;
+  height: 0.1em;
+  background-color: white;
+  margin: auto;
+  margin-top: 1em;
+  margin-left: 0;
+}
+
+/*COLONNE 2*/
+.Apropos li {
+  padding-bottom: 1.5em;
+  ;
+}
+
+.Apropos h3 {
+  margin-bottom: 1em;
+}
+
+.Apropos h3::after {
+  content: '';
+  display: block;
+  width: 6em;
+  height: 0.1em;
+  background-color: white;
+  margin: auto;
+  margin-top: 1em;
+  margin-left: 0;
+}
+
+/*COLONNE 3*/
+.aideEtService li {
+  padding-bottom: 1.5em;
+  ;
+}
+
+.aideEtService h3 {
+  margin-bottom: 1em;
+}
+
+.aideEtService h3::after {
+  content: '';
+  display: block;
+  width: 6em;
+  height: 0.1em;
+  background-color: white;
+  margin: auto;
+  margin-top: 1em;
+  margin-left: 0;
+}
+
+/*BOTTOM FOOTER*/
+/*ICON mode de paiement*/
+.paiementMod img {
+  width: 4em;
+  height: 4em;
+  margin-right: 0;
+}
+
+.botFooter li {
+  font-size: 75%;
+}
+
+.botFooter ul {
+  max-width: 1550px;
+  margin: auto;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
